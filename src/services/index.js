@@ -1,5 +1,9 @@
-import axios from "./instance";
+import pokemon from "./pokemon";
+import captured from "./pokemon/captured";
 
-const services = []
+const services = {
+  pokemon,
+  captured,
+};
 
-export default services
+export default services;

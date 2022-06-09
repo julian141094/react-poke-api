@@ -1,0 +1,38 @@
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import { Button } from "react-bootstrap";
+
+const Controls = ({
+  isNext = null,
+  loadPokemons,
+  loading,
+  loadCaptured,
+  seeListCaptured,
+}) => {
+  return (
+    <Container className="pokeDeck-control-container">
+      <Row className="centerContent">
+        <Col xs="6" className="">
+          <Button
+            disabled={loading}
+            variant={seeListCaptured ? "success" : "danger"}
+            onClick={() => loadCaptured()}
+          >
+            {seeListCaptured ? "See All" : "See Captureds"}
+          </Button>
+        </Col>
+        <Col xs="6" className="rightContent">
+          <Button
+            disabled={loading}
+            variant="danger"
+            onClick={() => (isNext != null ? loadPokemons(isNext) : null)}
+          >
+            Load More
+          </Button>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
+
+export default Controls;

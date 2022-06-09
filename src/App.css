@@ -36,3 +36,98 @@
     transform: rotate(360deg);
   }
 }
+
+.general-container {
+  background-color: #EF5350;
+  min-height: 100vh;
+}
+
+.pokeDeck-container {
+  background-color: white;
+  height: 65vh;
+  /* width: 90vw; */
+  max-width: 90vw;
+  overflow-y: scroll;
+  border: 10px solid black;
+  border-radius: 30px;
+  margin-top: 2em;
+}
+
+.pokeDeck-container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; 
+}
+
+.centerContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightContent{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 0ex 2rem;
+}
+
+.poke-card-container {
+  padding: 2em;
+}
+
+.poke-list-text-message-container{
+  padding: 2rem;
+}
+.poke-list-text-message {
+  font-weight: 900;
+}
+
+.poke-card {
+  border: 5px solid black !important;
+  border-radius: 30px !important;
+}
+
+.poke-card-body {
+  border-top: 5px solid black;
+  padding: 0rem  0rem 1rem 0rem !important;
+}
+
+.poke-card-title {
+  background-color: #EF5350;
+  color: white;
+  /* color: #FECA1B; */
+  text-transform: capitalize;
+  font-weight: 900;
+  padding: 1rem;
+}
+
+.poke-card-text {
+  padding: 0rem 1rem;
+}
+
+.poke-card-button-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+
+
+.pokeDeck-control-container {
+  background-color: #FECA1B;
+  max-width: 90vw;
+  border: 10px solid black;
+  border-radius: 30px;
+  margin-top: 1em;
+  padding: 15px;
+}
+
+.text-from-container {
+  display: flex !important;
+  justify-content: start !important;
+  align-items: center !important;
+}
+
+.text-from-group {
+  padding-right: 2em;
+}

@@ -1,8 +1,39 @@
 import axios from "axios";
 
-const instance = axios.create({
-  baseURL: "https://pokeapi.co/api/v2/?limit=20&offset=20",
-  timeout: 1000,
+const customAxios = axios.create({
+  baseURL: `${process.env.REACT_APP_API}`,
+  timeout: 2000,
+  headers: {
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+  },
 });
 
-export default instance;
+const requestHandler = (request) => {
+  return request;
+};
+
+const responseHandler = (response) => {
+  if (response.status === 401) {
+    localStorage.setItem("AutoLogout", true);
+  }
+  return response;
+};
+
+const errorHandler = (error) => {
+  if ([401, 403].includes(error.response.status)) {
+  }
+  return Promise.reject(error);
+};
+
+customAxios.interceptors.request.use(
+  (request) => requestHandler(request),
+  (error) => errorHandler(error)
+);
+
+customAxios.interceptors.response.use(
+  (response) => responseHandler(response),
+  (error) => errorHandler(error)
+);
+
+export default customAxios;
