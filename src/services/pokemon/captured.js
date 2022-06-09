@@ -1,6 +1,11 @@
 import { includes, pull } from "lodash";
 import { CAPTURED_STORAGE } from "../../utils/constants";
 
+/**
+ * @name getPokemonsFavoriteApi
+ * @description Get all pokemons Captured
+ * @returns Array
+ */
 export async function getPokemonsFavoriteApi() {
   try {
     const response = await localStorage.getItem(CAPTURED_STORAGE);
@@ -11,6 +16,12 @@ export async function getPokemonsFavoriteApi() {
   }
 }
 
+/**
+ * @name addPokemonFavoriteApi
+ * @description Add a pokemons Captured
+ * @param string id
+ * @returns Array
+ */
 export async function addPokemonFavoriteApi(id) {
   try {
     const favorites = await getPokemonsFavoriteApi();
@@ -21,6 +32,12 @@ export async function addPokemonFavoriteApi(id) {
   }
 }
 
+/**
+ * @name isPokemonFavoriteApi
+ * @description Check if a pokemons Captured
+ * @param string id
+ * @returns Array
+ */
 export async function isPokemonFavoriteApi(id) {
   try {
     const response = await getPokemonsFavoriteApi();
@@ -30,6 +47,12 @@ export async function isPokemonFavoriteApi(id) {
   }
 }
 
+/**
+ * @name removePokemonFavoriteApi
+ * @description Delete a pokemons Captured
+ * @param string id
+ * @returns Array
+ */
 export async function removePokemonFavoriteApi(id) {
   try {
     const favorites = await getPokemonsFavoriteApi();

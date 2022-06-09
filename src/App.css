@@ -1,54 +1,20 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root {
+  --main-bg-color: #EF5350;
+  --second-bg-color: #FECA1B;
+  --main-borders-color: black;
 }
 
 .general-container {
-  background-color: #EF5350;
+  background-color: var(--main-bg-color);
   min-height: 100vh;
 }
 
 .pokeDeck-container {
   background-color: white;
   height: 65vh;
-  /* width: 90vw; */
   max-width: 90vw;
   overflow-y: scroll;
-  border: 10px solid black;
+  border: 10px solid var(--main-borders-color);
   border-radius: 30px;
   margin-top: 2em;
 }
@@ -93,9 +59,8 @@
 }
 
 .poke-card-title {
-  background-color: #EF5350;
+  background-color: var(--main-bg-color);
   color: white;
-  /* color: #FECA1B; */
   text-transform: capitalize;
   font-weight: 900;
   padding: 1rem;
@@ -112,9 +77,8 @@
   padding: 0rem 1rem;
 }
 
-
 .pokeDeck-control-container {
-  background-color: #FECA1B;
+  background-color: var(--second-bg-color);
   max-width: 90vw;
   border: 10px solid black;
   border-radius: 30px;

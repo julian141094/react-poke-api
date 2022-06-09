@@ -3,6 +3,12 @@ import { Col } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import ButtonCaptured from "../basics/buttonCapture";
 
+/**
+ * @name PokemonCard
+ * @description Render a card with data of pokemon
+ * @param {*} item Pokemon (id, url, name)
+ * @returns JSX => Element
+ */
 const PokemonCard = ({ item }) => {
   const { id, url, name } = item;
   return (

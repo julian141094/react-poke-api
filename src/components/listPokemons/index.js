@@ -3,6 +3,13 @@ import CustomContainer from "../basics/container";
 import PokemonCard from "../cardPokemon";
 import Text from "../basics/text";
 
+/**
+ * @name List
+ * @description List all pokemons an array
+ * @param array pokemons
+ * @param bool loading
+ * @returns JSX Element
+ */
 const List = ({ pokemons, loading }) => {
   return (
     <CustomContainer>

@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+## Getting Started 🚀 🚀 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [You can see here](https://62a1558bf83a460889bba0eb--pokedexapireact.netlify.app/)
 
-## Available Scripts
+Hello, my name is Julian and this is my test of PokeAPI with React. If you wanna run the code, please install the dependencies:
 
-In the project directory, you can run:
+```bash
+npm install
+# or
+yarn install
+```
 
-### `yarn start`
+And then, run this please:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm run start
+# or
+yarn start
+# or (with docker)
+docker-compose up
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the test.
 
-### `yarn test`
+## Implemented Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Please, let me show you all of tools that i used, to build this test:
 
-### `yarn build`
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.
+- [React.js](https://reactjs.org/docs/getting-started.html) - React is a JavaScript library for building user interfaces.
+- [React Bootstrap](https://react-bootstrap.github.io/) - React-Bootstrap replaces the Bootstrap JavaScript. Each component has been built from scratch as a true React component, without unneeded dependencies like jQuery.
+- [Axios](https://axios-http.com/) - Axios is a simple promise based HTTP client for the browser and node.js. Axios provides a simple to use library in a small package with a very extensible interface.
+- And another more tools 😎 .
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You can check the rest on package.json file!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Development Vision
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+When I develop this code, I try to maintain the atomic component design paradigm, making (where possible) for each element of the sections a specific functional component. Given the number of elements built. It should be noted that the greatest workload was not found in the user interface styles, but at a logical level, in the connections with the different APIs to obtain the ETH account data.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you very much for all the time and dedication, blessings! 🙏

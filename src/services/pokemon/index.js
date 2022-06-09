@@ -1,6 +1,13 @@
 import axios from "../instance";
 
+// All pokemon services
 const pokemon = {
+  /**
+   * @name list
+   * @description Get all pokemons 6 by 6
+   * @param string | null nextEnpointUrl
+   * @returns Promisse
+   */
   list(nextEnpointUrl = null) {
     try {
       const url = "/pokemon?limit=6&offset=0";
@@ -9,6 +16,12 @@ const pokemon = {
       throw error;
     }
   },
+  /**
+   * @name details
+   * @description Get all data of one pokemon
+   * @param string url
+   * @returns Promisse
+   */
   details(url) {
     try {
       return axios.get(url);
@@ -16,6 +29,12 @@ const pokemon = {
       throw error;
     }
   },
+  /**
+   * @name searchByName
+   * @description Get all data of one pokemon or id
+   * @param string name
+   * @returns Promisse
+   */
   searchByName(name) {
     try {
       return axios.get(`/pokemon/${name}`);

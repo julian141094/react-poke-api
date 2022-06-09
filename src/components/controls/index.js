@@ -2,6 +2,16 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 
+/**
+ * @name Controls
+ * @description Render controls for the list of pokemons
+ * @param string | Null isNext
+ * @param funciton loadPokemon
+ * @param bool loading
+ * @param funciton loadCaptured
+ * @param bool seeListCaptured
+ * @returns JSX => Element
+ */
 const Controls = ({
   isNext = null,
   loadPokemons,

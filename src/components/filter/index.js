@@ -1,9 +1,15 @@
 import React, { useState, useCallback } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { Button, Form } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import { debounce } from "lodash";
 
-const Filter = ({ loading, getSearch }) => {
+/**
+ * @name Filter
+ * @description Component to filter a pokemon
+ * @param function getSearch
+ * @returns JSX Element
+ */
+const Filter = ({ getSearch }) => {
   const [word, setWord] = useState("");
 
   const search = (event) => {
@@ -13,15 +19,15 @@ const Filter = ({ loading, getSearch }) => {
 
   /**
    * @name debounceChange
-   * @description Handle field change (filter), and set new list of recipes at store
+   * @description Handle field change (filter), and excecute getSearch
    * @param event string
    * @return Nothing
    */
   const debounceChange = useCallback(debounce(search, 2000), []);
 
   /**
-   * @name debounceChange
-   * @description Handle field change (filter), and set new list of recipes at store
+   * @name handleChange
+   * @description Handle change and excecute debounce and update state field
    * @param event string
    * @return Nothing
    */

@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  client:
+    container_name: "pokeapireact"
+    build: .
+    command: yarn start
+    tty: true
+    ports: 
+      - "3000:3000"
+    environment:
+      - "REACT_APP_BY_PAGE=6"
+    volumes:
+      - ./pokeapireact:/app
+    
